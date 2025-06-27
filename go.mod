@@ -1,5 +1,7 @@
-module golevel7
+module github.com/Suresh-Nakkeran/golevel7
 
-go 1.12
+go 1.24.0
 
-require golang.org/x/net v0.0.0-20190324223953-e3b2ff56ed87
+require golang.org/x/net v0.41.0
+
+require golang.org/x/text v0.26.0 // indirect

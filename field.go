@@ -2,7 +2,7 @@ package golevel7
 
 import (
 	"fmt"
-	"golevel7/commons"
+	"github.com/Suresh-Nakkeran/golevel7/commons"
 	"strings"
 )
 
