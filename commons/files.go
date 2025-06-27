@@ -9,8 +9,8 @@ import (
 	"strings"
 )
 
-var hl7SplitToken = regexp.MustCompile("(\\r(\\n|\\x1c)+(\\n\\r)?MSH\\|\\^\\~\\\\\\&\\||$)")
-var hl7FindStartToken = regexp.MustCompile("(MSH\\|\\^\\~\\\\\\&\\||$)")
+var hl7SplitToken = regexp.MustCompile(`(\\r(\\n|\\x1c)+(\\n\\r)?MSH\\|\\^\\~\\\\\\&\\||$)`)
+var hl7FindStartToken = regexp.MustCompile(`(MSH\\|\\^\\~\\\\\\&\\||$)`)
 
 const scanBufferSize = 10 * 1024 * 1024
 
@@ -20,7 +20,7 @@ func GetHl7Files() (matches []string, err error) {
 	fileCnt := 0
 	fmt.Println("")
 	if matches, err = filepath.Glob(pattern); err == nil {
-		for fileCnt, _ = range matches {
+		for fileCnt := range matches {
 			fileCnt++
 			if fileCnt == 1 || fileCnt%1000 == 0 {
 				fmt.Printf("\rfound %v", fileCnt)
