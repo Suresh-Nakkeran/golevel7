@@ -4,8 +4,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"io/ioutil"
-	"log"
+	"io"
 	"reflect"
 	"strings"
 
@@ -27,16 +26,13 @@ func NewMessage(v []byte) *Message {
 		if err != nil {
 			return nil
 		}
-		utf8V, err = ioutil.ReadAll(reader)
+		utf8V, _ = io.ReadAll(reader)
 	} else {
 		utf8V = v
 	}
 	newMessage := &Message{
 		Value:      []rune(string(utf8V)),
 		Delimeters: *NewDelimeters(),
-	}
-	if err := newMessage.parse(); err != nil {
-		log.Fatal(fmt.Sprintf("Parse Error: %+v", err))
 	}
 	return newMessage
 }

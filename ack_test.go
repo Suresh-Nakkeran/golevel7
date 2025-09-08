@@ -2,7 +2,6 @@ package golevel7
 
 import (
 	"errors"
-	"fmt"
 	"os"
 	"testing"
 )
@@ -23,11 +22,6 @@ func TestAcknowledge(t *testing.T) {
 	ack := Acknowledge(mi, nil)
 	if ack == nil {
 		t.Fatal("Expected ACK message got nil")
-	}
-	for _, s := range ack.Segments {
-		for _, f := range s.Fields {
-			fmt.Println(string(f.Value))
-		}
 	}
 	ack = Acknowledge(mi, errors.New("This is a test error"))
 	if ack == nil {
