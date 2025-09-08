@@ -1,0 +1,27 @@
+1-Placer Appointment ID	EI	C	
+2-Filler Appointment ID	EI	C	
+3-Occurrence Number	NM	C	
+4-Placer Group Number	EI	O	
+5-Schedule ID	CWE	O	
+6-Event Reason	CWE	R	
+7-Appointment Reason	CWE	O	
+8-Appointment Type	CWE	O	
+9-Appointment Duration	NM	W	
+10-Appointment Duration Units	CNE	B	
+11-Appointment Timing Quantity	ST	W	
+12-Placer Contact Person	XCN	O	
+13-Placer Contact Phone Number	XTN	O	
+14-Placer Contact Address	XAD	O	
+15-Placer Contact Location	PL	O	
+16-Filler Contact Person	XCN	R	
+17-Filler Contact Phone Number	XTN	O	
+18-Filler Contact Address	XAD	O	
+19-Filler Contact Location	PL	O	
+20-Entered By Person	XCN	R	
+21-Entered By Phone Number	XTN	O	
+22-Entered By Location	PL	O	
+23-Parent Placer Appointment ID	EI	O	
+24-Parent Filler Appointment ID	EI	C	
+25-Filler Status Code	CWE	O	
+26-Placer Order Number	EI	C	
+27-Filler Order Number	EI	C	

@@ -261,8 +261,10 @@ func (m *Message) Unmarshal(it interface{}) error {
 	for i := 0; i < st.NumField(); i++ {
 		fld := stt.Field(i)
 		r := fld.Tag.Get("hl7")
+		fmt.Printf("Unmarshal field %s tag %s\n", fld.Name, r)
 		if r != "" {
 			if val, _ := m.Find(r); val != "" {
+				fmt.Printf("Found value for field %s: %s\n", fld.Name, val)
 				if st.Field(i).CanSet() {
 					// TODO support fields other than string
 					//fldT := st.Field(i).Type()

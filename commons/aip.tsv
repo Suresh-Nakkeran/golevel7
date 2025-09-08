@@ -1,0 +1,12 @@
+1-Set ID	SI	R	
+2-Segment Action Code	ID	C	
+3-Personnel Resource ID	XCN	C	
+4-Resource Type	CWE	C	
+5-Resource Group	CWE	O	
+6-Start Date/Time	DTM	C	
+7-Start Date/Time Offset	NM	C	
+8-Start Date/Time Offset Units	CNE	C	
+9-Duration	NM	O	
+10-Duration Units	CNE	O	
+11-Allow Substitution Code	CWE	C	
+12-Filler Status Code	CWE	C	

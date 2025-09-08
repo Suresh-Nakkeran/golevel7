@@ -1,0 +1,12 @@
+1-Set ID	SI	R	
+2-Segment Action Code	ID	C	
+3-Universal Service Identifier	CWE	R	
+4-Start Date/Time	DTM	C	
+5-Start Date/Time Offset	NM	C	
+6-Start Date/Time Offset Units	CNE	C	
+7-Duration	NM	O	
+8-Duration Units	CNE	O	
+9-Allow Substitution Code	CWE	C	
+10-Filler Status Code	CWE	C	
+11-Placer Suppliment Service Information	CWE	O	
+12-Filler Suppliment Service Information	CWE	O	

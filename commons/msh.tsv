@@ -11,10 +11,6 @@ Element Name	Type	Usage	Notes
 9-Message Type	MSG	R	Format: <Message type>^<Trigger event>
 10-Message Control ID	ST	O	Value to be returned in MSA-2 in the Acknowledgement message
 11-Processing ID	PT	R	Values:  → D: Debugging  → P: Production  → T: Training
-			
-			
-Incoming Medication Orders from Legacy Pharmacy to Willow Ambulatory Interface Technical Specification 6			
-Element Name	Type	Usage	Notes
 12-Version ID	VID	R	HL7 version number. For example, 2.5.
 13-Sequence Number	NM	O	Optional field used in sequence number protocol. By default, Epic does not use sequence number protocol.
 14-Continuation Provider	ST	O	This field is used with the HL7 DSC segment to define continuations of messages. This allows large messages to be broken into multiple smaller messages, which is necessary under certain implementation limitations. Consult HL7 chapter 2 for more information.
@@ -24,4 +20,8 @@ Element Name	Type	Usage	Notes
 18-Character Set	ID	O	
 19-Principal Language of Message	CWE	O	
 20-Alternate Character Set Handling Scheme	ID	O	
-21-Conformance Statement ID	EI	O	
+21-Message Profile Identifier	EI	O	
+22-Sending Responsible Organization	XON	O	
+23-Receiving Responsible Organization	XON	O
+24-Sending Network Address	HD	O
+25-Receiving Network Address	HD	O

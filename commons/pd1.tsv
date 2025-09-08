@@ -1,0 +1,22 @@
+1-Living Dependency	CWE	O	
+2-Living Arrangement	CWE	O	
+3-Patient Primary Facility	XON	O	
+4-Patient Primary Care Provider Name and ID Number	ST	W	
+5-Student Indicator	CWE	O	
+6-Handicap	CWE	O	
+7-Living Will Code	CWE	O	
+8-Organ Donor Code	CWE	O	
+9-Seperate Bill	ID	O	
+10-Duplicate Patient	CX	O	
+11-Publicity Code	CWE	O	
+12-Protection Indicator	ID	B	
+13-Protection Indicator Effective Date	DT	B	
+14-Place of Worship	XON	O	
+15-Advance Directive Code	CWE	C	
+16-Immunization Registry Status	CWE	O	
+17-Immunization Registry Status Effective Date	DT	O	
+18-Publicity Code Effective Date	DT	O	
+19-Military Branch	CWE	O	
+20-Military Rank/Grade	CWE	O	
+21-Military Status	CWE	O	
+22-Advance Directive Last Verified Date	DT	O	

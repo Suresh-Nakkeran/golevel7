@@ -1,0 +1,7 @@
+1-Event Type Code	ID	B	
+2-Recorded Date/Time	DTM	R	
+3-Date/Time Planned Event	DTM	O	
+4-Event Reason Code	IS	O	
+5-Operator ID	XCN	O	
+6-Event Occurred	DTM	O	
+7-Event Facility	HD	O	
