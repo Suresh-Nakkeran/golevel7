@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"io"
+	"strings"
 	//"log"
 )
 
@@ -53,6 +54,7 @@ func readBuf(reader io.Reader) ([]byte, error) {
 }
 
 // Split will split a set of HL7 messages
+//
 //	\x0b MESSAGE \x1c\x0d
 func Split(buf []byte) [][]byte {
 	msgSep := []byte{'\x1c', '\x0d'}
@@ -63,6 +65,8 @@ func Split(buf []byte) [][]byte {
 			continue
 		}
 		msg = bytes.TrimLeft(msg, "\x0b")
+		// remove newlines
+		msg = []byte(strings.ReplaceAll(string(msg), "\n", ""))
 		vmsgs = append(vmsgs, msg)
 	}
 	return vmsgs
